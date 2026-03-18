@@ -68,10 +68,20 @@ public:
 int main() {
     SensorNivel sn1("MH-1609");
     SensorNivel sn2("MH-1610", 0.0, 1000.0, 230.0);
-    
+    // MH significa "medeiros house"
     sn1.exibirResumo();
     sn2.exibirResumo();
-    // TODO: chame exibirResumo() para todos os objetos.
+    
+    Bomba bmb1("B-1611");
+    Bomba bmb2("B-1216", 40.0);
+    // bmb é abreviação para bomba
+    bmb1.exibirResumo();
+    bmb2.exibirResumo();
+
+    ControladorTanque ct1("CT-1");
+    ControladorTanque ct2("CT-2", 10.0 , 1.0);
+    ct1.exibirResumo();
+    ct2.exibirResumo();
 
     return 0;
 }
